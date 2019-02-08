@@ -4,7 +4,7 @@
   
 ## Tools and libraries
 ### Language:
-![alt-текст](https://freesoft.ru/storage/images/73/726/72553/72553_normal.png "JAVA")
+![alt-java](https://sdtimes.com/wp-content/uploads/2018/09/Java-logo-490x301.jpg "JAVA")
 
 ## Libraries:
 * Moxy
