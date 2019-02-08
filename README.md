@@ -18,3 +18,5 @@
 ## Video
 [![ALT-vido](https://github.com/FriedrichMykola/MyPortfolio/blob/master/image.png?raw=true)](https://www.youtube.com/watch?v=mIxi6ZiTrJo)
 
+<a href="https://www.youtube.com/watch?v=mIxi6ZiTrJo" target="_blank"><img src="https://github.com/FriedrichMykola/MyPortfolio/blob/master/image.png?raw=true" 
+alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="100" height="280" border="10" /></a>
