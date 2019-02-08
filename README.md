@@ -15,5 +15,6 @@
 * GreenRobot
 * Material Design
 
-[![ALT-ТЕКСТ ИЗОБРАЖЕНИЯ](https://github.com/FriedrichMykola/MyPortfolio/blob/master/image.png?raw=true)](https://www.youtube.com/watch?v=mIxi6ZiTrJo)
+## Video
+[![ALT-vido](https://github.com/FriedrichMykola/MyPortfolio/blob/master/image.png?raw=true)](https://www.youtube.com/watch?v=mIxi6ZiTrJo)
 
