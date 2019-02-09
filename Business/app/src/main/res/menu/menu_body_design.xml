@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/save_design"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:title=""/>
+    <item android:id="@+id/m_item_text_design"
+        android:icon="@drawable/ic_only_text_design_body"
+        android:title=""/>
+    <item android:id="@+id/m_item_image_text_design_left"
+        android:icon="@drawable/ic_image_and_text_design_body"
+        android:title=""/>
+    <item android:id="@+id/m_item_image_text_design_right"
+        android:icon="@drawable/ic_image_text_right"
+        android:title=""/>
+    <item android:id="@+id/m_item_gallery_design"
+        android:icon="@drawable/ic_gallery_design_body"
+        android:title=""/>
+</menu>

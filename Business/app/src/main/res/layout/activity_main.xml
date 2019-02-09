@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road_trees"
+    android:gravity="center_horizontal"
+    tools:context=".ui.main.MainActivity">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_client"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="@color/colorMainButton"
+                android:paddingVertical="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="45dp"
+                android:maxLines="1"
+                android:text="@string/guest"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:fontFamily="@font/museo_cyrl"
+                app:cornerRadius="30dp"
+                tools:targetApi="o"
+                android:layout_gravity="start" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_help_client"
+                app:icon="@drawable/ic_help_outline_black_24dp"
+                app:iconSize="30dp"
+                app:iconGravity="start"
+                app:iconTint="@color/colorWhite"
+                android:layout_marginTop="102dp"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                app:cornerRadius="40dp"
+                android:paddingHorizontal="4dp"
+                android:backgroundTint="@color/colorMainButton"
+                android:textColor="@color/colorWhite"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                tools:targetApi="o"
+                android:layout_toEndOf="@id/button_client"
+                android:layout_marginEnd="45dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_manager"
+                android:text="@string/manager"
+                android:layout_marginTop="50dp"
+                android:textSize="25sp"
+                android:textAlignment="textStart"
+                android:paddingVertical="8dp"
+                android:fontFamily="@font/museo_cyrl"
+                app:cornerRadius="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:backgroundTint="@color/colorMainButton"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="o"
+                android:layout_gravity="start"
+                android:paddingStart="15dp"
+                tools:ignore="RtlSymmetry"
+                android:paddingEnd="41dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_help_manager"
+                app:icon="@drawable/ic_help_outline_black_24dp"
+                app:iconSize="30dp"
+                app:iconGravity="start"
+                app:iconTint="@color/colorWhite"
+                android:fontFamily="@font/museo_cyrl"
+                android:layout_marginTop="55dp"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                app:cornerRadius="40dp"
+                android:paddingHorizontal="4dp"
+                android:backgroundTint="@color/colorMainButton"
+                android:textColor="@color/colorWhite"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                tools:targetApi="o"
+                android:layout_toEndOf="@id/button_manager"
+                android:layout_marginEnd="43dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_entrepreneur"
+                android:text="@string/entrepreneur"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cornerRadius="30dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/museo_cyrl"
+                android:paddingVertical="10dp"
+                android:backgroundTint="@color/colorMainButton"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                tools:targetApi="o"
+                android:paddingStart="15dp"
+                android:paddingEnd="45dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_help_business"
+                app:icon="@drawable/ic_help_outline_black_24dp"
+                app:iconSize="30dp"
+                app:iconGravity="start"
+                app:iconTint="@color/colorWhite"
+                android:layout_marginTop="57dp"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                app:cornerRadius="40dp"
+                android:paddingHorizontal="4dp"
+                android:backgroundTint="@color/colorMainButton"
+                android:textColor="@color/colorWhite"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                tools:targetApi="o"
+                android:layout_toEndOf="@id/button_entrepreneur"
+                android:layout_marginEnd="45dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

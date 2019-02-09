@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="165dp"
+        app:cardCornerRadius="7dp"
+        app:cardMaxElevation="5dp"
+        app:cardElevation="1dp"
+        android:backgroundTint="#c1dddde1"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_item"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_delete_item_gallery"
+                android:text="@string/delete"
+                android:textSize="12sp"
+                android:fontFamily="@font/museo_cyrl"
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

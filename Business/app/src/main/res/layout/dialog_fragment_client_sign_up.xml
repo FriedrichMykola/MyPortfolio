@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:targetApi="lollipop">
+
+
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/backround_for_dialog_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="o">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_phone_client"
+            android:textAlignment="center"
+            android:hint="@string/enter_phone"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxLength="13"
+            android:fontFamily="@font/museo_cyrl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sign_up_client"
+            android:text="@string/sign_up"
+            app:cornerRadius="5dp"
+            android:fontFamily="@font/museo_cyrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</FrameLayout>

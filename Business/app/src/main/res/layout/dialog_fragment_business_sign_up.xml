@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/backround_for_dialog_client"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:targetApi="o">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_name_business"
+            android:layout_marginTop="50dp"
+            android:hint="@string/business"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="25"
+            android:fontFamily="@font/museo_cyrl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_category"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:entries="@array/mCategory"
+            android:fontFamily="@font/museo_cyrl"
+            style="@style/Widget.AppCompat.Spinner.DropDown"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sign_up_business"
+            android:text="@string/sign_in_manager"
+            app:cornerRadius="5dp"
+            android:fontFamily="@font/museo_cyrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

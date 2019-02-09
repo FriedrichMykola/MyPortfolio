@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorTransparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorTransparent"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/colorTransparent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <com.skydoves.colorpickerview.ColorPickerView
+                android:id="@+id/color_picker_view_design"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:palette="@drawable/palette"
+                app:selector="@drawable/wheel"
+                app:alpha_selector="1"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:background="@color/colorTransparent"
+            android:id="@+id/radio_group_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radio_background"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="@string/background"
+                android:textAlignment="center"
+                android:fontFamily="@font/museo_cyrl"
+                android:checked="true"
+                tools:targetApi="o" />
+
+            <RadioButton
+                android:id="@+id/radio_text"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="@string/text"
+                android:textAlignment="center"
+                android:fontFamily="@font/museo_cyrl"
+                tools:targetApi="o" />
+
+            <RadioButton
+                android:id="@+id/radio_banner"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/banner_overlay"
+                android:textAlignment="center"
+                android:fontFamily="@font/museo_cyrl"
+                tools:targetApi="o" />
+
+            <RadioButton
+                android:id="@+id/radio_circle_border"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/border_logotype"
+                android:textAlignment="center"
+                android:fontFamily="@font/museo_cyrl"
+                tools:targetApi="o" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.skydoves.colorpickerview.sliders.AlphaSlideBar
+            android:id="@+id/alpha_slide_bar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            app:selector_AlphaSlideBar="@drawable/wheel"
+            app:borderColor_AlphaSlideBar="@android:color/darker_gray"
+            app:borderSize_AlphaSlideBar="5"/>
+
+        <com.skydoves.colorpickerview.sliders.BrightnessSlideBar
+            android:id="@+id/brightness_slide_bar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            app:selector_BrightnessSlider="@drawable/wheel"
+            app:borderColor_BrightnessSlider="@android:color/darker_gray"
+            app:borderSize_BrightnessSlider="5"/>
+
+    </LinearLayout>
+
+</LinearLayout>

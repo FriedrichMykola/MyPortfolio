@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@color/colorForTopPartFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:background="@color/colorTransparent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/colorTransparent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <com.skydoves.colorpickerview.ColorPickerView
+                        android:id="@+id/color_picker_view_design"
+                        android:background="@color/colorTransparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        app:palette="@drawable/palette"
+                        app:selector="@drawable/wheel"
+                        app:alpha_selector="1"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:background="@color/colorTransparent"
+                    android:id="@+id/radio_group_color"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radio_background"
+                        android:background="@color/colorTransparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:text="@string/background"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/museo_cyrl"
+                        tools:targetApi="o" />
+
+                    <RadioButton
+                        android:id="@+id/radio_text"
+                        android:background="@color/colorTransparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:text="@string/text"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/museo_cyrl"
+                        tools:targetApi="o" />
+
+                    <RadioButton
+                        android:id="@+id/radio_banner"
+                        android:background="@color/colorTransparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/banner_overlay"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/museo_cyrl"
+                        tools:targetApi="o" />
+
+                    <RadioButton
+                        android:id="@+id/radio_circle_border"
+                        android:background="@color/colorTransparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/border_logotype"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/museo_cyrl"
+                        tools:targetApi="o" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.skydoves.colorpickerview.sliders.AlphaSlideBar
+                    android:id="@+id/alpha_slide_bar"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:selector_AlphaSlideBar="@drawable/wheel"
+                    app:borderColor_AlphaSlideBar="@android:color/darker_gray"
+                    app:borderSize_AlphaSlideBar="5"/>
+
+                <com.skydoves.colorpickerview.sliders.BrightnessSlideBar
+                    android:id="@+id/brightness_slide_bar"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:selector_BrightnessSlider="@drawable/wheel"
+                    app:borderColor_BrightnessSlider="@android:color/darker_gray"
+                    app:borderSize_BrightnessSlider="5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_canvas"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorBottomBackgroundDesign">
+
+            <FrameLayout
+                android:id="@+id/frame_design_main_page"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/linear_tools_panel"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/frame_design_main_page"
+                android:background="@drawable/background_toolbar"
+                android:orientation="vertical"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="12dp"
+                tools:targetApi="o">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_apply_design"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:padding="6dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"
+                    app:cornerRadius="40dp"
+                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_paint_board_and_brush"
+                    tools:targetApi="o"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add_position_logotype"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:padding="6dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"
+                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_view_carousel_black_24dp"
+                    tools:targetApi="o" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add_logotype"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:padding="6dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_add_logotype"
+                    tools:targetApi="o" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add_banner"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:padding="6dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_banner_image"
+                    tools:targetApi="o" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add_text"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:padding="6dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    app:cornerRadius="40dp"
+                    app:icon="@drawable/ic_history"
+                    app:iconTint="@color/colorWhite"
+                    app:iconSize="22dp"
+                    tools:targetApi="o" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_add_style"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:paddingStart="2dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_style_objects"
+                    app:iconSize="30dp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="o" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_variants_position"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/linear_tools_panel"
+                tools:targetApi="o"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_pos_left"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_align_to_left"
+                    app:iconSize="20dp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="o"
+                    android:paddingStart="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_pos_center"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_center_text_alignment"
+                    app:iconSize="20dp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="o"
+                    android:paddingStart="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_pos_right"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="2dp"
+                    app:cornerRadius="40dp"
+                    app:backgroundTint="@color/colorTransparent"
+                    style="@style/Widget.MaterialComponents.Button"                    app:iconTint="@color/colorWhite"
+                    app:icon="@drawable/ic_align_to_right"
+                    app:iconSize="20dp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="o"
+                    android:paddingStart="8dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mCategory">
+        <item>Готель</item>
+        <item>Санаторій</item>
+        <item>Ресторан</item>
+        <item>Хостел</item>
+    </string-array>
+</resources>
