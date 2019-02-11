@@ -5,7 +5,7 @@
   * Add logotype
   * Add Banner
   * Change colors:
-⋅⋅*Ненумерованный вложенный список.
+⋅⋅* Ненумерованный вложенный список.
   ⋅⋅* Text.
   * Add Gallery
   * Create the design of your app's main body
