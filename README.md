@@ -17,4 +17,4 @@
 * Firebase
 
 ## Video
-[![ALT-vido](https://github.com/FriedrichMykola/MyPortfolio/blob/master/image.png?raw=true)](https://www.youtube.com/watch?v=mIxi6ZiTrJo)
+[![ALT-vido](https://github.com/FriedrichMykola/MyPortfolio/blob/master/Image.png?raw=true)](https://www.youtube.com/watch?v=mIxi6ZiTrJo)
