@@ -5,8 +5,8 @@
   * Add logotype
   * Add Banner
   * Change colors:
-  .. * Backgound
-  .. * Text
+  ⋅⋅* Backgound
+  ⋅⋅* Text
   * Add Gallery
   * Create the design of your app's main body
   You can watch on the video below how my app works
