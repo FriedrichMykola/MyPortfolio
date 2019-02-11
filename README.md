@@ -1,7 +1,7 @@
 # MyPortfolio
 ## Description
   It is the part of my project which i use as my portfolio. Here you can create design for your own app. All the elements are saved in Firebase Realtime Database and Storage
-  ### Yuo can:
+  ### You can:
   * Add logotype
   * Add Banner
   * Change colors:
