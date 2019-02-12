@@ -10,7 +10,8 @@
     * Banner
   * Add Gallery
   * Create the design of your app's main body
-  You can watch on the video below how my app works
+  
+  ### You can watch on the video below how my app works
   
 ## Tools and libraries
 ### Language:
